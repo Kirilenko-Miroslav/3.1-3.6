@@ -43,11 +43,11 @@ namespace WindowsFormsApp1
                 } // set
             } // public int X
         
-            public int Y
+             public int Y
+        {
+            get
             {
-                get
-                {
-                    try
+                try
                 {
                     return Convert.ToInt32(textBox2.Text);
                 }
@@ -103,7 +103,6 @@ namespace WindowsFormsApp1
         public Form2()
         {
             InitializeComponent();
-            _Rc = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -116,16 +115,6 @@ namespace WindowsFormsApp1
         {
             _Rc = false;
             Close();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
